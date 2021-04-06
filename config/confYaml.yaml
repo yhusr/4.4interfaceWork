@@ -1,0 +1,12 @@
+mysql:
+  host: api.lemonban.com
+  user: future
+  password: '123456'
+  port: 3306
+  db: futureloan
+  sql: select * from member where mobile_phone=%s
+phone:
+  prefixes: "186"
+api:
+  load: http://api.lemonban.com/futureloan
+  header: {'X-Lemonban-Media-Type': 'lemonban.v2'}
